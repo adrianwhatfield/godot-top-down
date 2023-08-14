@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 PlayerStats="*res://Scripts/player_stats.gd"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [input]
 
 move_up={
