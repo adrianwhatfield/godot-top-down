@@ -9,6 +9,9 @@ func _ready():
 
 func _process(delta):
 	update_anim_parameters()
+	
+	if Input.is_action_just_pressed("special"):
+		PlayerStats.change_stamina(-5)
 
 func _physics_process(delta):
 	direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
