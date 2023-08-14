@@ -12,5 +12,3 @@ func _on_tick_timer_timeout():
 	
 	if stamina < stamina_total:
 		PlayerStats.change_stamina(2)
-	
-	print(str(health) + " " + str(stamina))
