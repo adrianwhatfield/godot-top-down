@@ -12,3 +12,7 @@ func _on_tick_timer_timeout():
 	
 	if stamina < stamina_total:
 		PlayerStats.change_stamina(2)
+
+func _process(delta):
+	if Input.is_action_just_pressed("menu"):
+		get_tree().change_scene_to_file("res://Scenes/start_menu.tscn")
